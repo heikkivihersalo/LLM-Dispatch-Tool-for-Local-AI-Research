@@ -1,0 +1,21 @@
+.button {
+    background-color: var(--color--green);
+    color: var(--color--black);
+    border: none;
+    padding: 1em 2em;
+    border-radius: 2em;
+    cursor: pointer;
+
+    font-weight: 900;
+
+    &:hover {
+        background-color: var(--color--grey-dark);
+        color: var(--color--white);
+    }
+
+    &:disabled {
+        background-color: var(--color--grey);
+        color: var(--color--white);
+        cursor: not-allowed;
+    }
+}

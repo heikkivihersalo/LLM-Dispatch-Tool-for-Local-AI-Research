@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing--10);
+
+    margin-block-start: var(--spacing--30);
+    margin-block-end: var(--spacing--20);
+}
+
+.heading {
+    margin: 0;
+}
+
+.resetButton {
+    padding: 0;
+    background: none;
+    height: fit-content;
+
+    &:hover {
+        background: none;
+        color: var(--color--black);
+    }
+}

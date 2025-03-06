@@ -1,0 +1,13 @@
+.circle {
+    --_circle-color: var(--color--red);
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--_circle-color);
+    margin-inline: auto;
+}
+
+[data-running='true'] .circle {
+    --_circle-color: var(--color--green);
+}

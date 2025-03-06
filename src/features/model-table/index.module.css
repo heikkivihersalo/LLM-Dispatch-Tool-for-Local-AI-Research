@@ -1,0 +1,14 @@
+.table tr {
+    text-align: left;
+}
+
+.table th,
+.table td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.table th:first-child,
+.table td:first-child {
+    padding-left: 0;
+}

@@ -1,0 +1,26 @@
+.heading {
+    margin-top: 0;
+}
+
+.description {
+    margin-block-end: var(--spacing--20);
+}
+
+.actionButtons {
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--spacing--20);
+    margin-block-start: var(--spacing--20);
+}
+
+.resetButton {
+    background-color: transparent;
+    color: var(--color--foreground);
+    border: none;
+    padding: 0;
+
+    &:hover {
+        color: var(--color--grey-dark);
+        background: transparent;
+    }
+}

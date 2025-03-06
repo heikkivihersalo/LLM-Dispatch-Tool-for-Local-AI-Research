@@ -1,0 +1,14 @@
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-weight: bolder;
+}
+
+.textarea {
+    background-color: #282c34;
+    padding: 1em;
+    font-size: 14px;
+}

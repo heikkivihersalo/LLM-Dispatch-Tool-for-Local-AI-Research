@@ -1,0 +1,132 @@
+:root {
+    --font-family--text: 'Rubik', sans-serif;
+    --font-size--colossal: clamp(
+        2.48832rem,
+        calc(2.2993384921875rem + 0.9449075390625vw),
+        3.4332275390625rem
+    );
+    --font-size--gigantic: clamp(
+        2.0736rem,
+        calc(1.93900359375rem + 0.67298203125vw),
+        2.74658203125rem
+    );
+    --font-size--huge: clamp(
+        1.728rem,
+        calc(1.634146875rem + 0.469265625vw),
+        2.197265625rem
+    );
+    --font-size--large: clamp(
+        1.44rem,
+        calc(1.3764375rem + 0.3178125vw),
+        1.7578125rem
+    );
+    --font-size--medium: clamp(1rem, calc(0.975rem + 0.125vw), 1.125rem);
+    --font-size--small: clamp(
+        0.833333333333333rem,
+        calc(0.82rem + 0.0666666666666667vw),
+        0.9rem
+    );
+    --font-size--tiny: clamp(
+        0.694444444444445rem,
+        calc(0.689333333333334rem + 0.0255555555555554vw),
+        0.72rem
+    );
+
+    /**
+    * SPACING
+    */
+    --spacing--80: clamp(
+        17.9420103826923rem,
+        calc(14.4219928226512rem + 17.6000878002055vw),
+        35.5420981828977rem
+    );
+    --spacing--70: clamp(
+        11.0890051808976rem,
+        calc(9.30881991978825rem + 8.90092630554659vw),
+        19.9899314864442rem
+    );
+    --spacing--60: clamp(
+        6.853526069776rem,
+        calc(5.9756450647836rem + 4.389405024962vw),
+        11.242931094738rem
+    );
+    --spacing--50: clamp(
+        4.235801032rem,
+        calc(3.8182895742rem + 2.087557289vw),
+        6.323358321rem
+    );
+    --spacing--40: clamp(
+        2.617924rem,
+        calc(2.4302199rem + 0.9385205vw),
+        3.5564445rem
+    );
+    --spacing--30: clamp(1.618rem, calc(1.54155rem + 0.38225vw), 2.00025rem);
+    --spacing--20: clamp(1rem, calc(0.975rem + 0.125vw), 1.125rem);
+    --spacing--10: clamp(
+        0.618046971569839rem,
+        calc(0.615109684219015rem + 0.0146864367541203vw),
+        0.63273340832396rem
+    );
+
+    /**
+    * WIDTHS
+    */
+    --size--narrow: min(calc(100% - calc(var(--spacing--20)) * 2), 50ch);
+    --size--content: min(calc(100% - calc(var(--spacing--20)) * 2), 1250px);
+    --size--wide: min(100%, 1920px);
+
+    /**
+    * COLORS
+    */
+    /* Brand colors */
+    --color--brand--hue: 355;
+    --color--brand--saturation: 65%;
+    --color--brand--lightness: 65%;
+
+    --color--primary-light: hsl(
+        var(--color--brand--hue) var(--color--brand--saturation) 76%
+    );
+    --color--primary: hsl(
+        var(--color--brand--hue) var(--color--brand--saturation)
+            var(--color--brand--lightness)
+    );
+    --color--primary-dark: hsl(
+        var(--color--brand--hue) var(--color--brand--saturation) 30%
+    );
+
+    /* Backgrounds & Foregrounds */
+    --color--background: hsl(0, 0%, 100%);
+    --color--foreground: hsl(0, 0%, 0%);
+
+    /* Greys */
+    --color--grey-light: hsl(var(--color--brand--hue) 0% 88%);
+    --color--grey: hsl(var(--color--brand--hue) 0% 51%);
+    --color--grey-dark: hsl(var(--color--brand--hue) 0% 34%);
+    --color--grey-extra-dark: hsl(var(--color--brand--hue) 0% 18%);
+
+    /* Black and White */
+    --color--black: hsl(0, 0%, 0%);
+    --color--white: hsl(0, 0%, 100%);
+
+    /* Accent colors */
+    --color--green: #98c379;
+    --color--red: #f93a25;
+}
+
+[color-theme='dark'] {
+    --color--background: hsl(0, 0%, 0%);
+    --color--foreground: hsl(0, 0%, 100%);
+    --color--grey-light: hsl(var(--color--brand--hue) 0% 88%);
+    --color--grey: hsl(var(--color--brand--hue) 0% 51%);
+    --color--grey-dark: hsl(var(--color--brand--hue) 0% 34%);
+    --color--grey-extra-dark: hsl(var(--color--brand--hue) 0% 18%);
+}
+
+[color-theme='light'] {
+    --color--background: hsl(0, 0%, 100%);
+    --color--foreground: hsl(0, 0%, 0%);
+    --color--grey-light: hsl(var(--color--brand--hue) 0% 88%);
+    --color--grey: hsl(var(--color--brand--hue) 0% 51%);
+    --color--grey-dark: hsl(var(--color--brand--hue) 0% 34%);
+    --color--grey-extra-dark: hsl(var(--color--brand--hue) 0% 18%);
+}

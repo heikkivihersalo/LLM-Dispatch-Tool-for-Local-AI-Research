@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    grid-template-columns: fit-content(100%) 1fr;
+    gap: var(--spacing--20);
+
+    margin-block: var(--spacing--30);
+}
+
+.bubble {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    font-size: var(--font-size--medium);
+    font-weight: bold;
+    color: white;
+
+    background: blueviolet;
+
+    width: 3rem;
+    height: 3rem;
+
+    border-radius: 50%;
+}
