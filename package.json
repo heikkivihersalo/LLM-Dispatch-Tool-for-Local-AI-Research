@@ -15,7 +15,7 @@
     },
     "dependencies": {
         "@codemirror/lang-json": "^6.0.1",
-        "@langchain/community": "^0.3.32",
+        "@langchain/community": "^1.1.14",
         "@langchain/core": "^0.3.40",
         "@langchain/ollama": "^0.2.0",
         "@langchain/openai": "^0.4.4",
